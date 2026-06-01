@@ -16,8 +16,11 @@ class InfoScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Icon(Icons.person_rounded, size: 80, color: Colors.blueGrey),
-            const SizedBox(height: 20),
+            const CircleAvatar(
+              radius: 70,
+              backgroundImage: AssetImage('assets/foto profesional.jpeg'),
+            ),
+            const SizedBox(height: 24),
             const Text(
               'Juan Vrasmatas',
               style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),

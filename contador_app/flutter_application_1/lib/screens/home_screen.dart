@@ -44,11 +44,12 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             const Text(
               'Valor actual',
-              style: TextStyle(fontSize: 20),
+              style: TextStyle(fontSize: 22, color: Colors.blueGrey),
             ),
+            const SizedBox(height: 12),
             Text(
               '$_valor',
-              style: const TextStyle(fontSize: 72, fontWeight: FontWeight.bold),
+              style: const TextStyle(fontSize: 96, fontWeight: FontWeight.bold),
             ),
           ],
         ),
