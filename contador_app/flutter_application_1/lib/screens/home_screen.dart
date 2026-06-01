@@ -31,6 +31,12 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: Colors.blueGrey,
         title: const Text('Contador'),
         centerTitle: true,
+        actions: [
+          IconButton(
+            onPressed: () => Navigator.pushNamed(context, '/info'),
+            icon: const Icon(Icons.info_rounded),
+          ),
+        ],
       ),
       body: Center(
         child: Column(
